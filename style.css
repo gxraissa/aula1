@@ -1,7 +1,7 @@
 body {
-  background: #161616;
+  background: #c2dec9; /* verde pastel claro */
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #fff;
+  color: #85601b;      /* laranja pôr do sol suave */
   margin: 0;
   padding: 0;
 }
@@ -10,16 +10,57 @@ body {
   max-width: 960px;
   margin: 32px auto;
   padding: 24px;
-  background: #232323;
+  background: rgba(255,255,255,0.7);
   border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
 
+/* Seção Resenha */
+.resenha {
+  background: rgba(255,255,255,0.82);
+  border: 2px solid #85601b;
+  border-radius: 14px;
+  padding: 28px 24px 22px 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 14px rgba(133,96,27,0.07);
+}
+
+.resenha-titulo {
+  font-size: 2rem;
+  color: #85601b;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.resenha-subtitulo {
+  font-size: 1.2rem;
+  color: #b58936; /* tom mais claro para subtítulo */
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.resenha-texto {
+  font-size: 1.05rem;
+  color: #85601b;
+  line-height: 1.7;
+  margin-bottom: 0;
+  text-align: justify;
+  word-break: break-word;
+}
+
+.resenha-texto em, .resenha-texto em {
+  font-style: italic;
+  color: #b58936;
+}
+
+/* Fila de Vídeos */
 .main-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #F6328E;
+  color: #85601b;
   margin-bottom: 36px;
   letter-spacing: 1px;
 }
@@ -32,20 +73,20 @@ body {
 }
 
 .video-card {
-  background: #292929;
-  border: 2px solid #F6328E;
+  background: rgba(255,255,255,0.83);
+  border: 2px solid #85601b;
   border-radius: 14px;
   overflow: hidden;
   width: 310px;
   transition: transform .2s, box-shadow .2s;
-  box-shadow: 0 4px 14px rgba(246,50,142,0.13);
+  box-shadow: 0 4px 14px rgba(133,96,27,0.10);
   display: flex;
   flex-direction: column;
 }
 
 .video-card:hover {
   transform: translateY(-7px) scale(1.03);
-  box-shadow: 0 10px 32px rgba(246,50,142,0.25);
+  box-shadow: 0 10px 32px rgba(133,96,27,0.22);
 }
 
 .video-card iframe {
@@ -62,13 +103,13 @@ body {
 .video-info h2 {
   margin: 0 0 8px 0;
   font-size: 1.3rem;
-  color: #F6328E;
+  color: #85601b;
 }
 
 .video-info p {
   margin: 0;
   font-size: 1rem;
-  color: #e0e0e0;
+  color: #b58936;
   line-height: 1.5;
 }
 
